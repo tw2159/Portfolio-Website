@@ -7,10 +7,10 @@
 }
 :root {
     --light-gray: #ededf6;
-    --light-teal: #92cccd;
+    --light-teal: #e1cee7;
     --dark-teal: #31696a;
     --dark-blue: #445876;
-    --grayish-blue: #31343d;
+    --grayish-blue: #16647c;
 }
 body {
     background-color: var(--light-gray);
@@ -108,10 +108,10 @@ nav {
 /* --- Content ---------------------------------------- */
 
 .hero {
-    background-image: url("../images/some-bg.png");
+    background-image: url("../images/some-bg.jpg");
     background-position: center;
     background-size: cover;
-    height: 230px;
+    height: 200px;
     margin-bottom: 25px;
     position: relative;
     width: 100%;
