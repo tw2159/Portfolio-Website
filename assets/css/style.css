@@ -42,8 +42,9 @@ img {
 }
 h1 {
     font-size: 48px;
-    padding: 0 10px 0 50px;
-    Border-radius: 15px;
+    border-radius: 15px;
+    margin: 0 8px;
+    test-align: center;
 }
 h2 {
     bottom: 30px;
@@ -51,7 +52,8 @@ h2 {
     padding: 5px;
     position: absolute;
     right: 50px;
-    Border-radius: 15px;
+    border-radius: 15px;
+    margin: 0 8px;
 }
 h3 {
     color: var(--dark-blue);
@@ -230,7 +232,6 @@ section {
 @media screen and (max-width: 575px) {
     h1 {
         font-size: 36px;
-        padding: 0 10px 0 30px;
     }
     h2 {
         font-size: 26px;
