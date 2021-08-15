@@ -44,7 +44,8 @@ h1 {
     font-size: 48px;
     border-radius: 15px;
     margin: 0 8px;
-    test-align: center;
+    text-align: center;
+    padding: 5px;
 }
 h2 {
     bottom: 30px;
