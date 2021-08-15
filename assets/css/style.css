@@ -8,7 +8,7 @@
 :root {
     --light-gray: #ededf6;
     --light-teal: #e1cee7;
-    --dark-teal: #31696a;
+    --dark-teal: #9858ad;
     --dark-blue: #445876;
     --grayish-blue: #16647c;
 }
@@ -43,6 +43,7 @@ img {
 h1 {
     font-size: 48px;
     padding: 0 10px 0 50px;
+    Border-radius: 15px;
 }
 h2 {
     bottom: 30px;
@@ -50,6 +51,7 @@ h2 {
     padding: 5px;
     position: absolute;
     right: 50px;
+    Border-radius: 15px;
 }
 h3 {
     color: var(--dark-blue);
