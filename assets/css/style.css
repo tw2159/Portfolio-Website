@@ -1,0 +1,288 @@
+/* --- Universal Styling ------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --light-gray: #ededf6;
+    --light-teal: #92cccd;
+    --dark-teal: #31696a;
+    --dark-blue: #445876;
+    --grayish-blue: #31343d;
+}
+body {
+    background-color: var(--light-gray);
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    border: 5px solid var(--light-teal);
+    opacity: 0.8;
+    width: 100%;
+}
+
+/* --- Title & Header Tags ---------------------------- */
+
+.title {
+    background-color: var(--light-teal);
+    color: var(--grayish-blue);
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    font-size: 48px;
+    padding: 0 10px 0 50px;
+}
+h2 {
+    bottom: 30px;
+    font-size: 40px;
+    padding: 5px;
+    position: absolute;
+    right: 50px;
+}
+h3 {
+    color: var(--dark-blue);
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    padding-right: 25px;
+    text-align: right;
+    width: 15%;
+}
+h4 {
+    font-size: 24px;
+    margin: 6px 0;
+}
+h5 {
+    font-size: 12px;
+}
+
+/* --- Header ----------------------------------------- */
+
+header {
+    background-color: var(--grayish-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 0 12px;
+}
+
+/* --- Navigation ------------------------------------- */
+
+nav {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-right: 50px;
+    padding-top: 15px;
+}
+.nav-list {
+    display: flex;
+}
+.nav-list li {
+    display: inline-block;
+    margin-left: 8px;
+}
+.nav-list li:hover a {
+    border-color: var(--dark-teal);
+    color: var(--dark-teal);
+}
+.nav-list li a {
+    border-bottom: 3px solid var(--light-teal);
+    color: var(--light-teal);
+    margin-left: 8px;
+    padding: 0 8px 2px;
+}
+
+/* --- Content ---------------------------------------- */
+
+.hero {
+    background-image: url("../images/some-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+}
+section {
+    clear: both;
+    display: flex;
+    margin: 0 auto 20px;
+    width: 90%;
+}
+.content {
+    border-left: 3px solid var(--dark-blue);
+    padding-left: 25px;
+    width: 85%;
+}
+.photo {
+    border: 0;
+    float: right;
+    height: 120px;
+    margin: 0 0 10px 10px;
+    width: 120px;
+}
+.work-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work-list li {
+    padding-bottom: 20px;
+}
+.work-list li:first-child {
+    width: 100%;
+}
+.work-list li:not(:first-child) {
+    width: 50%;
+}
+.work-list li:not(:first-child):nth-child(even) {
+    padding-right: 10px;
+}
+.work-list li:not(:first-child):nth-child(odd) {
+    padding-left: 10px;
+}
+.work-list li a {
+    position: relative;
+}
+.work-list li a:hover img {
+    border-color: var(--dark-teal);
+    opacity: 1;
+}
+.work-info {
+    background-color: var(--light-teal);
+    color: var(--dark-blue);
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 5px;
+    min-height: 70px;   
+    padding: 8px;
+    position: absolute;
+    top: -80px;
+}
+.contact-list {
+    display: flex;
+    justify-content: space-around
+}
+.contact-list li {
+    border-bottom: 3px solid var(--dark-blue);
+    color: var(--dark-blue);
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 40px 0;
+    padding: 0 8px 2px;
+}
+.contact-list li:first-child {
+    margin-left: 20px;
+}
+.contact-list li a {
+    color: var(--dark-blue);
+}
+
+/* --- Media Queries ---------------------------------- */
+
+
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 36px;
+        padding: 0 10px 0 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        border-bottom: 3px solid var(--dark-blue);
+        clear: both;
+        padding-right: 0;
+        text-align: left;
+        width: auto;
+    }
+    h4 {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-right: 0;
+    }
+    section {
+        display: block;
+    }
+    .content {
+        border: 0;
+        clear: both;
+        padding: 20px 0 0;
+        width: 100%;
+    }
+    .work-list li:not(:first-child) {
+        width: 100%;
+    }
+    .work-list li:not(:first-child):nth-child(even),
+    .work-list li:not(:first-child):nth-child(odd) {
+        padding: 0 0 20px 0;
+    }
+    .work-info {
+        min-height: 50px;
+        top: -50px;
+    }
+    .nav-list,
+    .contact-list {
+        flex-direction: column;
+        list-style-type: disc;
+    }
+    .nav-list li a,
+    .contact-list li {
+        border: 0;
+        display: list-item;
+        margin: 5px 0 5px 20px;
+    }
+}
+
